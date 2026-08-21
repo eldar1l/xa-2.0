@@ -10,6 +10,12 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var hasDoubleJump = false
 var hasDoubleJumpRn = true
+var vidas:int = 3
+var invulnerable = false
+
+func _ready() -> void:
+	pass
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -53,6 +59,22 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play(\"Idle\")
 
 	move_and_slide()
+
+
+func _on_area_2d_area_entered(area: Area2D)-> void:
+	if not invulnerable and \"damage\" in area:
+		vidas -= 1
+		print(\"Vidas restantes: \", vidas)
+		
+		if vidas <= 0:
+			get_tree().quit()
+			return
+			
+		invulnerable = true
+		print(\"invulnerable por 5 segundos\")
+		await get_tree().create_timer(5.0).timeout
+		invulnerable = false
+		print(\"dejaste de ser invulnerable\")
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ovd52"]
@@ -213,6 +235,10 @@ animations = [{
 radius = 20.0
 height = 56.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8w0r3"]
+radius = 20.0
+height = 56.0
+
 [node name="Jugador" type="CharacterBody2D" unique_id=689302181]
 script = SubResource("GDScript_px3ve")
 
@@ -227,3 +253,10 @@ shape = SubResource("CapsuleShape2D_1v2qv")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1117669507]
 position = Vector2(2, -51)
 zoom = Vector2(1.88, 1.88)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=624740771]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1375112958]
+shape = SubResource("CapsuleShape2D_8w0r3")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

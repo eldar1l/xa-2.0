@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://uli2s0sv7cjt" path="res://assets/Escenarios/fondo1.tscn" id="1_p41lq"]
 [ext_resource type="Texture2D" uid="uid://dinxf7jnotqpg" path="res://assets/Imagenes/elementos/ground1.png" id="2_cnbsb"]
 [ext_resource type="PackedScene" uid="uid://c0hm47ayuaja1" path="res://assets/Escenarios/utils/DobleSalto.tscn" id="3_cxox0"]
+[ext_resource type="PackedScene" uid="uid://cprf25futu07g" path="res://assets/Escenarios/utils/pinchos.tscn" id="5_q15v2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lo45j"]
 size = Vector2(2.5982995, 0.9316721)
@@ -81,3 +82,7 @@ scale = Vector2(0.135, 0.135)
 
 [node name="Jugador" parent="." unique_id=689302181 instance=ExtResource("1_0qjnb")]
 position = Vector2(131, 365)
+
+[node name="Pinchos" parent="." unique_id=1308854384 instance=ExtResource("5_q15v2")]
+position = Vector2(930.0001, 452)
+scale = Vector2(0.105, 0.105)

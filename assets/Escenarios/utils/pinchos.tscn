@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cprf25futu07g"]
+
+[ext_resource type="Script" uid="uid://bpd6m0obir1vk" path="res://assets/Escenarios/utils/pinchos.gd" id="1_eqgut"]
+[ext_resource type="Texture2D" uid="uid://87mhcht6myao" path="res://assets/Imagenes/elementos/floorspikes.png" id="1_ijtdv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3x3x"]
+size = Vector2(1257, 538)
+
+[node name="Pinchos" type="Area2D" unique_id=1308854384]
+script = ExtResource("1_eqgut")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1778838407]
+texture = ExtResource("1_ijtdv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=981058863]
+position = Vector2(-11.5, 39)
+shape = SubResource("RectangleShape2D_q3x3x")
