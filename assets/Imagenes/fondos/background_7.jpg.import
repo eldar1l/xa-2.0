@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqlbcq6435x3u"
-path="res://.godot/imported/Xa_animaciones.png-1281ebfd7846507e8c0da5b84478a8a9.ctex"
+uid="uid://c3v65lxj4dxik"
+path="res://.godot/imported/background_7.jpg-0cdf6b1cbf1e2be955b38b372d0ad985.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/Xa_animaciones.png"
-dest_files=["res://.godot/imported/Xa_animaciones.png-1281ebfd7846507e8c0da5b84478a8a9.ctex"]
+source_file="res://assets/Imagenes/fondos/background_7.jpg"
+dest_files=["res://.godot/imported/background_7.jpg-0cdf6b1cbf1e2be955b38b372d0ad985.ctex"]
 
 [params]
 

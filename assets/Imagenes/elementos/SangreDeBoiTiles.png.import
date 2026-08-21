@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gnfdp33c3co6"
-path="res://.godot/imported/efecto_doble_salto_tile.png-1b718adb845bcd1057090a34468c4d13.ctex"
+uid="uid://cto487rcoir2s"
+path="res://.godot/imported/SangreDeBoiTiles.png-ccfb4afa6210f3145c9c6dc0ec64de7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/efecto_doble_salto_tile.png"
-dest_files=["res://.godot/imported/efecto_doble_salto_tile.png-1b718adb845bcd1057090a34468c4d13.ctex"]
+source_file="res://assets/Imagenes/elementos/SangreDeBoiTiles.png"
+dest_files=["res://.godot/imported/SangreDeBoiTiles.png-ccfb4afa6210f3145c9c6dc0ec64de7e.ctex"]
 
 [params]
 

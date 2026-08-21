@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0k0bub8xtin"
-path="res://.godot/imported/background_6.jpg-fb51e6007f7e770f5ec0d936c118d348.ctex"
+uid="uid://gnfdp33c3co6"
+path="res://.godot/imported/efecto_doble_salto_tile.png-586a06acff8a7c2481fc3485b8c5e4d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fondos/background_6.jpg"
-dest_files=["res://.godot/imported/background_6.jpg-fb51e6007f7e770f5ec0d936c118d348.ctex"]
+source_file="res://assets/Imagenes/personaje/efecto_doble_salto_tile.png"
+dest_files=["res://.godot/imported/efecto_doble_salto_tile.png-586a06acff8a7c2481fc3485b8c5e4d4.ctex"]
 
 [params]
 

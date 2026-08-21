@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://h0585aob06g4"
-path="res://.godot/imported/Xa_animaciones_red.png-dae0b260bed94c6e096cb3dbec3ae372.ctex"
+path="res://.godot/imported/Xa_animaciones_red.png-62dadd2361968eae1f49b56d39a60219.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personaje/Xa_animaciones_red.png"
-dest_files=["res://.godot/imported/Xa_animaciones_red.png-dae0b260bed94c6e096cb3dbec3ae372.ctex"]
+source_file="res://assets/Imagenes/personaje/Xa_animaciones_red.png"
+dest_files=["res://.godot/imported/Xa_animaciones_red.png-62dadd2361968eae1f49b56d39a60219.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqgq3w1pn42gt"
-path="res://.godot/imported/background_12.jpg-2e8e7d276fd9f0b9f6f038b62373da24.ctex"
+uid="uid://b2x2vb2p3dpwm"
+path="res://.godot/imported/SangreDeBoi.png-c1316537ee59da1990a7d42f0af385e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fondos/background_12.jpg"
-dest_files=["res://.godot/imported/background_12.jpg-2e8e7d276fd9f0b9f6f038b62373da24.ctex"]
+source_file="res://assets/Imagenes/elementos/SangreDeBoi.png"
+dest_files=["res://.godot/imported/SangreDeBoi.png-c1316537ee59da1990a7d42f0af385e7.ctex"]
 
 [params]
 
