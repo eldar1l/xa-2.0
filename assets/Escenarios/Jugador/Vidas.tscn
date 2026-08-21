@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://beol3s52augs7"]
+
+[ext_resource type="Script" uid="uid://bjmukehklw8qm" path="res://assets/Escenarios/Jugador/vidas.gd" id="1_oqo33"]
+[ext_resource type="Texture2D" uid="uid://crbaj1g50rtx3" path="res://assets/Imagenes/elementos/vidaSprite.png" id="1_pmb0j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6npn1"]
+atlas = ExtResource("1_pmb0j")
+region = Rect2(0, 0, 1080, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8w0r3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6npn1")
+}],
+"loop": 1,
+"name": &"VidaMaxima",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_3wpyt"]
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, -2), Vector2(1, -10)]
+}
+
+[sub_resource type="Animation" id="Animation_dohhs"]
+resource_name = "hearts"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, -2), Vector2(1, -10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_du2hp"]
+_data = {
+&"RESET": SubResource("Animation_3wpyt"),
+&"hearts": SubResource("Animation_dohhs")
+}
+
+[node name="Vida" type="Node2D" unique_id=556511367]
+script = ExtResource("1_oqo33")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1198871426]
+position = Vector2(1, -2)
+sprite_frames = SubResource("SpriteFrames_8w0r3")
+animation = &"VidaMaxima"
+frame_progress = 0.11224096
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1689946405]
+root_node = NodePath("../AnimatedSprite2D")
+libraries/ = SubResource("AnimationLibrary_du2hp")

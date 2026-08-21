@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://nwfoks4a54e"]
+[gd_scene format=3 uid="uid://chbi8hn5vesr0"]
 
 [ext_resource type="Texture2D" uid="uid://dqlbcq6435x3u" path="res://assets/Imagenes/personaje/Xa_animaciones.png" id="1_nw0ao"]
 
@@ -10,7 +10,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var hasDoubleJump = false
 var hasDoubleJumpRn = true
-var vidas:int = 3
+var vidas:int = 5
 var invulnerable = false
 
 func _ready() -> void:
@@ -245,7 +245,7 @@ script = SubResource("GDScript_px3ve")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=911747738]
 position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_46eti")
-animation = &"Falling"
+animation = &"Jumping"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1026824666]
 shape = SubResource("CapsuleShape2D_1v2qv")

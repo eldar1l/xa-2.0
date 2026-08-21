@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ccj35dnapuwhb"]
 
-[ext_resource type="PackedScene" uid="uid://chbi8hn5vesr0" path="res://assets/Escenarios/Jugador.tscn" id="1_0qjnb"]
+[ext_resource type="PackedScene" uid="uid://nwfoks4a54e" path="res://assets/Escenarios/Jugador.tscn" id="1_0qjnb"]
 [ext_resource type="PackedScene" uid="uid://uli2s0sv7cjt" path="res://assets/Escenarios/fondo1.tscn" id="1_p41lq"]
 [ext_resource type="Texture2D" uid="uid://dinxf7jnotqpg" path="res://assets/Imagenes/elementos/ground1.png" id="2_cnbsb"]
 [ext_resource type="PackedScene" uid="uid://c0hm47ayuaja1" path="res://assets/Escenarios/utils/DobleSalto.tscn" id="3_cxox0"]
 [ext_resource type="PackedScene" uid="uid://cprf25futu07g" path="res://assets/Escenarios/utils/pinchos.tscn" id="5_q15v2"]
+[ext_resource type="PackedScene" uid="uid://beol3s52augs7" path="res://assets/Escenarios/Jugador/Vidas.tscn" id="6_qtnpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lo45j"]
 size = Vector2(2.5982995, 0.9316721)
@@ -80,9 +81,13 @@ shape = SubResource("RectangleShape2D_dmlhq")
 position = Vector2(589, 265)
 scale = Vector2(0.135, 0.135)
 
+[node name="Pinchos" parent="." unique_id=1308854384 groups=["enemigos"] instance=ExtResource("5_q15v2")]
+position = Vector2(931, 473)
+scale = Vector2(0.105, 0.105)
+
 [node name="Jugador" parent="." unique_id=689302181 instance=ExtResource("1_0qjnb")]
 position = Vector2(131, 365)
 
-[node name="Pinchos" parent="." unique_id=1308854384 instance=ExtResource("5_q15v2")]
-position = Vector2(930.0001, 452)
-scale = Vector2(0.105, 0.105)
+[node name="Vida" parent="Jugador" unique_id=556511367 instance=ExtResource("6_qtnpg")]
+position = Vector2(-208, -188.00002)
+scale = Vector2(0.165, 0.165)
