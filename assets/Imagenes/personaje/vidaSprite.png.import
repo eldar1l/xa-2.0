@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crbaj1g50rtx3"
-path="res://.godot/imported/vidaSprite.png-6f6b876946698fca802d58a3ab508ef2.ctex"
+uid="uid://cs48cjbe1ktex"
+path="res://.godot/imported/vidaSprite.png-99b83093c5fcbe34edae2179ad351764.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Imagenes/elementos/vidaSprite.png"
-dest_files=["res://.godot/imported/vidaSprite.png-6f6b876946698fca802d58a3ab508ef2.ctex"]
+source_file="res://assets/Imagenes/personaje/vidaSprite.png"
+dest_files=["res://.godot/imported/vidaSprite.png-99b83093c5fcbe34edae2179ad351764.ctex"]
 
 [params]
 

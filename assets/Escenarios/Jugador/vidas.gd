@@ -1,11 +1,5 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	$AnimationPlayer.play("hearts")
+func _on_jugador_vida_cambiada(vidaActual: Variant, vidaMaxima: Variant) -> void:
+	if vidaActual > 0:
+		$AnimatedSprite2D.play(str(vidaActual) + " Corazones")

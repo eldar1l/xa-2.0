@@ -91,3 +91,5 @@ position = Vector2(131, 365)
 [node name="Vida" parent="Jugador" unique_id=556511367 instance=ExtResource("6_qtnpg")]
 position = Vector2(-208, -188.00002)
 scale = Vector2(0.165, 0.165)
+
+[connection signal="vidaCambiada" from="Jugador" to="Jugador/Vida" method="_on_jugador_vida_cambiada"]

@@ -1,20 +1,68 @@
 [gd_scene format=3 uid="uid://beol3s52augs7"]
 
 [ext_resource type="Script" uid="uid://bjmukehklw8qm" path="res://assets/Escenarios/Jugador/vidas.gd" id="1_oqo33"]
-[ext_resource type="Texture2D" uid="uid://crbaj1g50rtx3" path="res://assets/Imagenes/elementos/vidaSprite.png" id="1_pmb0j"]
+[ext_resource type="Texture2D" uid="uid://cs48cjbe1ktex" path="res://assets/Imagenes/personaje/vidaSprite.png" id="2_oqo33"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6npn1"]
-atlas = ExtResource("1_pmb0j")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ty83c"]
+atlas = ExtResource("2_oqo33")
+region = Rect2(0, 864, 1080, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmh4u"]
+atlas = ExtResource("2_oqo33")
+region = Rect2(0, 648, 1080, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4bg3"]
+atlas = ExtResource("2_oqo33")
+region = Rect2(0, 432, 1080, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xet3x"]
+atlas = ExtResource("2_oqo33")
+region = Rect2(0, 216, 1080, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqo33"]
+atlas = ExtResource("2_oqo33")
 region = Rect2(0, 0, 1080, 216)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8w0r3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6npn1")
+"texture": SubResource("AtlasTexture_ty83c")
 }],
 "loop": 1,
-"name": &"VidaMaxima",
+"name": &"1 Corazones",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmh4u")
+}],
+"loop": 1,
+"name": &"2 Corazones",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4bg3")
+}],
+"loop": 1,
+"name": &"3 Corazones",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xet3x")
+}],
+"loop": 1,
+"name": &"4 Corazones",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqo33")
+}],
+"loop": 1,
+"name": &"5 Corazones",
 "speed": 5.0
 }]
 
@@ -61,8 +109,7 @@ script = ExtResource("1_oqo33")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1198871426]
 position = Vector2(1, -2)
 sprite_frames = SubResource("SpriteFrames_8w0r3")
-animation = &"VidaMaxima"
-frame_progress = 0.11224096
+animation = &"1 Corazones"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1689946405]
 root_node = NodePath("../AnimatedSprite2D")
